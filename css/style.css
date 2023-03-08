@@ -191,9 +191,12 @@ header p {
   font-weight: "bold";
 }
 header .image {
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px gray;
+  border: 2px solid black;
   background-image: url("https://picsum.photos/500/200");
   max-width: 500px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

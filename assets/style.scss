@@ -48,11 +48,12 @@ header{
     }
 
     .image{
+        @include floatign ();
         background-image: url('https://picsum.photos/500/200');
         max-width: 500px;
         width: 100%;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         
     }
 }
