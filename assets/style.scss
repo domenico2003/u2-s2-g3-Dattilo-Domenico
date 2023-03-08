@@ -1,0 +1,58 @@
+@import "./partials/reset";
+@import "./partials/colori";
+@import "./partials/spaziature";
+@import "./partials/font";
+@import "./partials/mixins";
+@import "./partials/bottoni";
+@import "./partials/animazioni";
+
+
+body{
+    color: $colore-testo;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(59, 0, 132);
+    position: sticky;
+    top: 0;
+
+    .container{
+        display: flex;
+        align-items: center;
+        
+        width: 100%;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            
+        }
+    }
+}
+
+header{
+    background-color: $bg-hero;
+    display: flex;
+    justify-content: space-between;
+    
+    h1{
+        @include header()
+        
+    }
+    p{
+        font-size:$sm-font;
+        font-weight:$font-bold  
+    }
+
+    .image{
+        background-image: url('https://picsum.photos/500/200');
+        max-width: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: auto;
+        
+    }
+}

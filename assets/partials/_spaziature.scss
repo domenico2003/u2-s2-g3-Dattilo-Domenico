@@ -1,0 +1,32 @@
+$misure:(
+xs:4px,
+sm:8px,
+md: 16px,
+lg:25px,
+xl: 45px,
+xxl:65px
+);
+
+@each $dimensione,$size in $misure{
+    .padding-block-#{$dimensione}{
+        padding-block: $size;
+    }
+};
+
+@each $dimensione,$size in $misure{
+    .padding-inline-#{$dimensione}{
+        padding-inline: $size;
+    }
+};
+
+@each $dimensione,$size in $misure{
+    .margin-block-#{$dimensione}{
+        margin-block: $size;
+    }
+};
+
+@each $dimensione,$size in $misure{
+    .margin-inline-#{$dimensione}{
+        margin-inline: $size;
+    }
+};

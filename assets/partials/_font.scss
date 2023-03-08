@@ -1,0 +1,15 @@
+$xs-font:1rem;
+$sm-font:$xs-font*1.25;
+$md-font:$xs-font*1.5;
+$lg-font:$xs-font*1.75;
+$xl-font:$xs-font*2;
+$xxl-font:$xs-font*2.5;
+$font-bold:'bold';
+$font-normal:400;
+
+
+
+@mixin header{
+    font-size: $xxl-font;
+    font-weight: $font-bold;
+}

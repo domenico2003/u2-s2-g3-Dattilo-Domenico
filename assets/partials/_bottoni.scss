@@ -1,0 +1,25 @@
+@mixin bottoni-style($sfondo){
+    padding-inline: 20px;
+    padding-block: 5px;
+    border-radius: 10px;
+    color: $colore-testo;
+    background-color: $sfondo;
+    box-shadow: 0px 0px 10px 3px $sfondo;
+    border: 2px solid $sfondo;
+    &:hover{
+        background-color: white;
+        color: $sfondo;
+        box-shadow: 0 0 0px 0px $sfondo;
+        border: 2px solid $sfondo;
+    }
+}
+
+$colors-b:(arancio:$bg-b-arancio, celeste:$bg-b-celeste, verde:$bg-b-verde);
+
+
+@each $colore,$tonalita in $colors-b {
+    
+    .button-#{$colore}{
+        @include bottoni-style($tonalita)
+    }
+}
